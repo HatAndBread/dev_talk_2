@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>A Great Webpage!</title>
+</head>
+<body>
+  <marquee><h1>CSS Pseudo Elements</h1></marquee>
+  <div class="section">
+    <h1>Have you ever seen this syntax in CSS? </h1>
+    <code>some_class::before {<br>&nbsp content: 'hello!'<br>}</code>
+    <code>some_class::after {<br>&nbsp content: 'goodbye!'<br>}</code>
+  <p>Until recently every time I saw this syntax, I wondered what it did for a few seconds and then moved on.  </p>
+  <p>Recently, however, I have found it to be super useful!</p>
+  </div>
+  <div class="section">
+    <h1>What is a pseudo-element? 🤔</h1>
+    <p>A pseudo element simply mimics an HTML element without actually having to create a new element in the DOM.</p>
+  </div>
+  
+  <div class="section">
+    <img src="2div.png"></img>
+    <h1>Example without pseudo elements</h1>
+    <div class="hover-div"><p>MOUSE OVER ME! 🐭</p> 
+    <div class="decorator overline"></div>
+    <div class="decorator underline"></div>
+    <p>Oh no! We have 2 useless divs! 😱</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="1div.png"></img>
+    <h1>Example with pseudo elements</h1>
+    <div class="hover-div-2"><p>MOUSE OVER ME! 🐭</p> 
+    <p>Yay! We don't have any useless divs! 🎉✨</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h1>Syntax</h1>
+    <code>
+      .some-class::before {<br>&nbsp content: '';<br>}<br><br>.some-class::after {<br>&nbsp content: '';<br>}
+    </code>
+      <p>⚠️ You must add property "content" or it won't work!</p>
+      <p>⚠️ You can only use one before property and one after property</p>
+  </div>
+
+  <div class="section">
+    <h1>🎨ARTS AND CRAFTS TIME 🎨</h1>
+    <div class="make-me-pretty"><p>💅 MAKE ME PRETTY!!! 💅</p> 
+    </div>
+  </div>
+</body>
+</html>

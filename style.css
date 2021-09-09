@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+body {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Comic Neue', monospace;
+  margin: 0;
+}
+
+marquee {
+  color: white;
+  font-size: 48px;
+}
+
+code {
+  background-color: slategrey;
+  color: snow;
+  font-size:x-large; 
+  padding: 16px;
+  width: fit-content;
+  border-radius: 16px;
+  margin: 16px;
+  text-align: left;
+}
+p{
+  font-size: larger;
+}
+.section {
+  background-color: yellow;
+  color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  height: 85vh;
+  font-size: x-large;
+}
+
+.hover-div {
+  cursor: pointer;
+  position: relative;
+}
+
+.decorator {
+  position: relative;
+  background-color: magenta; 
+  width: 0%;
+  height: 5px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+.hover-div .overline{
+  top: -80px;
+}
+
+.hover-div .underline{
+  top: -20px;
+  left: 100%;
+}
+
+.hover-div:hover .overline{
+  width: 100%;
+  background-color: royalblue;
+}
+
+.hover-div:hover .underline{
+  width: 100%;
+  left: 0%;
+  background-color: hotpink; 
+}
+
+img {
+  border-radius: 16px;
+}
+
+.hover-div-2 {
+  cursor: pointer;
+  position: relative;
+}
+
+.hover-div-2::before {
+  position: absolute;
+  top: 0px;
+  content: '';
+  background-color: magenta; 
+  width: 0%;
+  height: 5px;
+  left: 0px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+.hover-div-2::after {
+  position: absolute;
+  top: 90px;
+  content: '';
+  background-color: magenta; 
+  width: 0%;
+  left: 100%;
+  height: 5px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+.hover-div-2:hover::before {
+  width: 100%;
+  background-color: green;
+}
+
+.hover-div-2:hover::after {
+  width: 100%;
+  left: 0px;
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.make-me-pretty {
+  position: relative;
+  cursor: crosshair;
+}
+
+.make-me-pretty::before {
+  content: 'asdfljslkfjkllkdsjfkljds:';
+  position: absolute;
+  background-color: green;
+  width: 100px;
+  height: 1vw;
+}
+
+.make-me-pretty::after {
+  content: '';
+  position: absolute;
+}
+
+.make-me-pretty:hover::before {
+  background-color: pink;
+}
+
+.make-me-pretty:hover::after {
+
+}
+
+
+
+
+
+
+
+
+
